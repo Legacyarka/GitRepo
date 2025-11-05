@@ -3,7 +3,8 @@ using namespace std;
 
 
 int main() {
-    int a = 5;
-    cout << a << endl;
+    float a = 4.7, b = 5.6;
+    int sum = (int)a+(int)b;
+    cout << sum << endl;
     return 0;
 }
