@@ -3,8 +3,13 @@ using namespace std;
 
 
 int main() {
-    float a = 4.7, b = 5.6;
-    int sum = (int)a+(int)b;
-    cout << sum << endl;
+    int n;
+    int sum = 0;
+    cout << "enter numbers to be added: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++){
+        sum = sum + i;
+    }
+    cout << sum;
     return 0;
 }
