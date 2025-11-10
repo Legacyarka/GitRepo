@@ -3,13 +3,19 @@ using namespace std;
 
 
 int main() {
-    int n;
-    int sum = 0;
-    cout << "enter numbers to be added: ";
-    cin >> n;
-    for (int i = 1; i <= n; i++){
-        sum = sum + i;
+    int n = 7;
+    bool isprime = true;
+    for (int i = 2; i <n; i++){
+        if(n%i == 0){
+            isprime = false;
+            break;
+        }
     }
-    cout << sum;
+    if (isprime == true){
+        cout << "the number is prime" << endl;
+    }else{
+        cout << "the number is not prime" << endl;
+    }
+    
     return 0;
 }
